@@ -31,6 +31,7 @@ class App extends React.Component {
         selectedVideo: null,
         error: e,
       })
+      console.log(this.state)
     }
   };
 

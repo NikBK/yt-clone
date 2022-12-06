@@ -1,7 +1,7 @@
 import React from 'react';
 
 const VideoDetail = ({ video }) => {
-  console.log(video)
+  console.log("Video ", video)
   if (!video) {
     return <div>Loading...</div>;
   }

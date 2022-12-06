@@ -32,7 +32,7 @@ class App extends React.Component {
         selectedVideo: null,
         error: e.message,
       })
-      // console.log(this.state.error)
+      console.log(this.state.error)
     }
   };
 

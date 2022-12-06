@@ -31,8 +31,9 @@ class App extends React.Component {
         selectedVideo: null,
         error: e,
       })
-      console.log(this.state)
+      console.log(this.state.error)
     }
+    console.log("error here ", this.state.error)
   };
 
   onVideoSelect = (video) => {

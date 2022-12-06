@@ -6,7 +6,7 @@ import VideoDetail from "./VideoDetail";
 import ErrorMessage from "./ErrorMessage";
 
 class App extends React.Component {
-  state = { videos: [], selectedVideo: null, error: "" };
+  state = { videos: [], selectedVideo: null, error: null };
 
   componentDidMount() {
     this.onTermSubmit("buildings");
@@ -23,7 +23,7 @@ class App extends React.Component {
       this.setState({
         videos: response.data.items,
         selectedVideo: response.data.items[0],
-        error: ""
+        error: null
       });
     }
     catch (e) {

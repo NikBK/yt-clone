@@ -1,7 +1,7 @@
 const ErrorMessage = ({ message }) => {
-    console.log("we are getting error")
+    console.log("we are getting error", message)
     return (
-        <div>Error</div>
+        <div>Error: {message}</div>
     );
 }
 

@@ -30,7 +30,7 @@ class App extends React.Component {
       this.setState({
         videos: [],
         selectedVideo: null,
-        error: e,
+        error: e.message,
       })
       // console.log(this.state.error)
     }

@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import ErrorMessage from "./ErrorMessage";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null, error: "" };

@@ -10,10 +10,14 @@ export default axios.create({
     maxResults: 5,
     key: KEY,
     // mode: "cors",
-    headers: {
-      "Content-Type": "text/plain",
-      "Access-Control-Allow-Origin": "*",
-    },
+    // headers: {
+    //   "Content-Type": "text/plain",
+    //   "Access-Control-Allow-Origin": "*",
+    // },
+  },
+  headers: {
+    "Content-Type": "text/plain",
+    "Access-Control-Allow-Origin": "*",
   },
 
 });

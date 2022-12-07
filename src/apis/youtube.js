@@ -1,4 +1,5 @@
 import axios from "axios";
+import { createProxyMiddleware } from "http-proxy-middleware";
 
 const KEY = "AIzaSyBf-mBYkmKoyfGEBInvrtMxeZuMQBQGiho";
 
@@ -14,6 +15,7 @@ export default axios.create({
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "*",
     },
+    proxy: createProxyMiddleware({ target: "https://www.googleapis.com", changeOrigin: true })
   },
   // mode: "cors",
   // headers: {

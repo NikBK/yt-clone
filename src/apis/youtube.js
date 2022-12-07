@@ -1,5 +1,4 @@
 import axios from "axios";
-import { createProxyMiddleware } from "http-proxy-middleware";
 
 const KEY = "AIzaSyBf-mBYkmKoyfGEBInvrtMxeZuMQBQGiho";
 
@@ -12,11 +11,8 @@ export default axios.create({
     key: KEY,
     // mode: "cors",
     headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/plain",
     },
-    proxy: createProxyMiddleware({ target: 'https://www.googleapis.com/youtube/v3', changeOrigin: true }),
-    // withCredentials: false,
   },
 
 });

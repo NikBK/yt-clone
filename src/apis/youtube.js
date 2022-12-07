@@ -15,6 +15,7 @@ export default axios.create({
       "Access-Control-Allow-Origin": "https://helpful-vacherin-e2320d.netlify.app",
     },
     withCredentials: false,
+    access_token: KEY,
   },
 
 });

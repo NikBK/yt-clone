@@ -13,7 +13,6 @@ export default axios.create({
     headers: {
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "x-requested-with, authorization",
     },
   },
 

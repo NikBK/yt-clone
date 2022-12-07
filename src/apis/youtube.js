@@ -12,6 +12,8 @@ export default axios.create({
     // mode: "cors",
     headers: {
       "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "x-requested-with, authorization",
     },
   },
 

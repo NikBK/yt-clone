@@ -11,8 +11,8 @@ export default axios.create({
     key: KEY,
     mode: "cors",
     headers: {
-      "Content-Type": "text/plain",
-      "Access-Control-Allow-Origin": "https://helpful-vacherin-e2320d.netlify.app",
+      "Content-Type": "application/x-www-form-urlencoded",
+      "Access-Control-Allow-Origin": "*",
     },
     withCredentials: false,
     access_token: KEY,

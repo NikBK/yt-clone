@@ -14,6 +14,7 @@ export default axios.create({
       "Content-Type": "text/plain",
       "Access-Control-Allow-Origin": "https://helpful-vacherin-e2320d.netlify.app",
     },
+    withCredentials: false,
   },
 
 });

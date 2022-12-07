@@ -9,11 +9,11 @@ export default axios.create({
     type: "video",
     maxResults: 5,
     key: KEY,
-    // mode: "cors",
-    // headers: {
-    //   "Content-Type": "text/plain",
-    //   "Access-Control-Allow-Origin": "*",
-    // },
+    mode: "cors",
+    headers: {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   mode: "cors",
   headers: {

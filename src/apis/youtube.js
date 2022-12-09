@@ -15,7 +15,7 @@ export default axios.create({
       "Content-Type": "*",
       "Access-Control-Allow-Origin": "*",
     },
-    proxy: createProxyMiddleware({ target: "https://www.googleapis.com/youtube/v3", changeOrigin: true })
+    // proxy: createProxyMiddleware({ target: "https://www.googleapis.com/youtube/v3", changeOrigin: true })
   },
   // mode: "cors",
   // headers: {
